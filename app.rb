@@ -7,7 +7,7 @@ also_reload('lib/**/*.rb')
     erb(:index)
   end
 
-  get('/title') do
+  post('/title') do
     @title = params.fetch('title').title_case()
     erb(:title)
   end
